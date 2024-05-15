@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(73, 73, 255);
+    color: white;
+    font-family: Comic Sans;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50vh;
+}
+
+.oculto {
+    display: none;
+}
+
+#botao {
+    width: 10em;
+    height: 10em;
+    text-align: center;
+    background-color: yellow;
+    border: solid 4px;
+    border-radius: 15px;
+    
+}
+
+#botao:hover {
+    background-color: rgb(237, 223, 32);
+}
