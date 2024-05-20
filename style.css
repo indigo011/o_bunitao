@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+
 body {
-    background-color: rgb(73, 73, 255);
+    background: url("./cloud.jpg");
+    background-size: cover;
+    background-attachment: fixed;
     color: white;
-    font-family: Comic Sans;
     font-weight: bold;
     text-align: center;
     margin-top: 50vh;
@@ -9,18 +13,49 @@ body {
 
 .oculto {
     display: none;
+    justify-content: center;
+    margin: 2rem 0;
 }
 
 #botao {
     width: 10em;
     height: 10em;
     text-align: center;
-    background-color: yellow;
-    border: solid 4px;
+    background: rgb(255,222,191);
+    background: linear-gradient(45deg, rgba(255,222,191,1) 0%, rgba(172,154,194,1) 67%, rgba(255,148,182,1) 100%);
+    border: solid 4px #88a6d8;
     border-radius: 15px;
-    
+    transition: all ease-in-out 0.25s;
+    animation: slidein 4s infinite ease-in-out;
+    filter: drop-shadow(#e081a9 4px 4px 3px);
 }
 
 #botao:hover {
-    background-color: rgb(237, 223, 32);
+    /* background-color: rgb(237, 223, 32); */
+    filter: brightness(1.2);
+
 }
+
+#interrogacao {
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: bold;
+    font-size: 100px;
+    color: #FCDCBC;
+    -webkit-text-stroke: #88a5d8e5 3.5px;
+    filter: drop-shadow(gray 1px 2px 1px);
+}
+
+@keyframes slidein {
+    0% {
+      transform: translateY(0%);
+    }
+  
+    50% {
+      transform: translateY(25%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+  }
+  

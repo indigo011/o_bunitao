@@ -12,6 +12,6 @@ function mostra_elementos() {
     var classes = document.getElementsByClassName("oculto")
 
     for (i = 0; i < classes.length; i++) {
-        classes[i].style.display = "block"
+        classes[i].style.display = "flex"
     }
 }
